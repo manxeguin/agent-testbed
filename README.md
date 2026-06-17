@@ -38,6 +38,23 @@ introduced per task by the agent under test.
 - Task work happens on dedicated branches of the form `swe/<task-id>`.
 - Changes are committed automatically by the harness; do not push to `main`.
 
+## Contributing
+
+Contributions are made through the task harness rather than standard pull
+requests. To contribute:
+
+1. Open a task session on a fresh branch of the form `swe/<task-id>` based on
+   `main`.
+2. Keep changes focused and atomic: one logical change per branch and commit.
+3. Follow the conventions already established in this `README.md` (section
+   depth, tone, and bullet style) when adding new content.
+4. Do not commit secrets, generated artifacts, or files unrelated to the task.
+5. Leave the working tree clean of stray edits when the session ends; the
+   harness handles staging and committing.
+
+For larger changes that span multiple concerns, split them into separate
+`swe/<task-id>` branches instead of bundling unrelated edits together.
+
 ## License
 
 No license has been declared. Treat the contents as proprietary unless and
